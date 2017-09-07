@@ -3,6 +3,7 @@
 const request = require('request');
 const cheerio = require('cheerio');
 const _ = require('lodash');
+const jsonfile = require('jsonfile');
 
 const urlMaterias = "https://servicios.econ.uba.ar/alumnos/oferta/2017-2/OfertaCicloProf.html";
 const places = ['Avellaneda', 'Paternal', 'Pilar', 'San Isidro', 'Virtual', 'Cordoba'];
@@ -54,4 +55,8 @@ const output = request(urlMaterias, (err, response, html) => {
   const result = rows
     .toArray()
     .map(mapRowToObject($));
+
+  jsonfile.writeFile('./public/data.json', result, { spaces: 2 }, function (err) {
+    console.error(err)
+  })
 });
