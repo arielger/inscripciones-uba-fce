@@ -1,5 +1,14 @@
 // This file contains the node.js script that lets you update the .json file
-// with the data of all the academic offer
+// with the data of all the academic subjects
+
+/*
+  JSON Structure:
+
+  - subject
+    - chair
+      - place
+        - item
+*/
 const request = require('request');
 const cheerio = require('cheerio');
 const _ = require('lodash');
@@ -19,10 +28,19 @@ const mapRowToObject = $ => row => {
   const rowText = $(row).text().trim();
 
   // We can identify rows of type subject and chair by the background color of the row
-  if (rowTypeByBackgroundColor) {
+  if (rowTypeByBackgroundColor === 'subject') {
     return ({
-      type: rowTypeByBackgroundColor,
-      name: rowText
+      type: 'subject',
+      name: rowText,
+      chairs: []
+    });
+  }
+
+  if (rowTypeByBackgroundColor === 'chair') {
+    return ({
+      type: 'chair',
+      name: rowText,
+      places: []
     });
   }
 
@@ -30,14 +48,15 @@ const mapRowToObject = $ => row => {
   if (places.includes(rowText)) {
     return ({
       type: 'place',
-      name: rowText
+      name: rowText,
+      items: []
     });
   }
 
   // Identify rows of type subject based on the amount of <td> items
   if (tdItems.length === 5) {
     return ({
-      type: 'subject',
+      type: 'item',
       code: tdItems.eq(0).text(),
       day: tdItems.eq(1).text(),
       time: tdItems.eq(2).text(),
@@ -49,12 +68,40 @@ const mapRowToObject = $ => row => {
   return ({ type: 'undefined' });
 };
 
+const createJSONStructure = (subjects, row) => {
+  const { type } = row;
+
+  if (type === 'subject') return subjects.concat(row);
+
+  if (type === 'chair') {
+    const lastSubject = subjects[subjects.length - 1];
+    lastSubject.chairs = lastSubject.chairs.concat(row);
+  }
+
+  if (type === 'place') {
+    const lastSubject = subjects[subjects.length - 1];
+    const lastChair = lastSubject.chairs[lastSubject.chairs.length - 1];
+    lastChair.places = lastChair.places.concat(row);
+  }
+
+  if (type === 'item') {
+    const lastSubject = subjects[subjects.length - 1];
+    const lastChair = lastSubject.chairs[lastSubject.chairs.length - 1];
+    const lastPlace = lastChair.places[lastChair.places.length - 1];
+    lastPlace.items = lastPlace.items.concat(row);
+  }
+
+  return subjects;
+};
+
 const output = request(urlMaterias, (err, response, html) => {
   const $ = cheerio.load(html);
   const rows = $('table tr');
   const result = rows
     .toArray()
-    .map(mapRowToObject($));
+    .map(mapRowToObject($))
+    .filter(row => row.type !== "undefined")
+    .reduce(createJSONStructure, []);
 
   jsonfile.writeFile('./public/data.json', result, { spaces: 2 }, function (err) {
     console.error(err)
