@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import data from '../../data/data.json';
 import './index.css'
 
+// Group 
+const getItemSchedule = item => {
+  if (item.mode === "V") return '';
+  return item.schedule.reduce(
+    (acc, current) => `${acc} ${current.day}(${current.hour})`,
+    []
+  );
+}
+
+
 class DataView extends Component {
   constructor(){
     super();
@@ -36,8 +46,10 @@ class DataView extends Component {
                         place.items.map(item =>
                           <div className="item">
                             <span className="item__code">{item.code}</span>
-                            <h5>Profesor: {item.professor}</h5>
-                            <h5>Mode: {item.mode}</h5>
+                            <span className="item__place">{place.name}</span>
+                            <span className="item__schedule">{getItemSchedule(item)}</span>
+                            <span className="item__professor">{item.professor}</span>
+                            <span className="item__mode">{item.mode}</span>
                           </div>
                         )
                       )

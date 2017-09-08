@@ -21,10 +21,6 @@
   display: block;
 }
 
-.filters__hidden-checkbox {
-  display: none;
-}
-
 .filters__place {
   margin-bottom: 16px;
   cursor: pointer;
@@ -48,4 +44,47 @@
 .filters__checkbox.active {
   background-color: #A9E34B;
   border: none;
+}
+
+/* Hours section */
+
+.filters__hours {
+  display: flex;
+  flex-direction: row;
+}
+
+.filters__hours__checkbox-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 16px;
+}
+
+.filters__hours-column {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.filters__hours__item {
+  margin-bottom: 17px;
+}
+
+.filters__hours__checkbox-input:checked + .filters__hours__checkbox {
+  background-color: #A9E34B;
+  border: none;
+}
+
+.filters__hours__day {
+  margin-bottom: 20px;
+}
+
+.filters__hours__checkbox {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 16px;
 }
