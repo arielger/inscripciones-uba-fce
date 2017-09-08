@@ -1,0 +1,806 @@
+[
+  {
+    "type": "subject",
+    "code": 252,
+    "name": "ADMINISTRACION GENERAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 274,
+    "name": "SISTEMAS ADMINISTRATIVOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 279,
+    "name": "ADMINISTRACION FINANCIERA",
+    "note": "Se recomienda tener aprobada la asignatura 277"
+  },
+  {
+    "type": "subject",
+    "code": 453,
+    "name": "ADMINISTRACION DE LA PRODUCCION",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 454,
+    "name": "ADMINISTRACION DEL PERSONAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 456,
+    "name": "COMERCIALIZACION",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 457,
+    "name": "TEORIA DE LA DECISION",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 458,
+    "name": "PLANEAMIENTO A LARGO PLAZO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 459,
+    "name": "DIRECCION GENERAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 460,
+    "name": "SEMINARIO DE INTEGR. Y APLICACION",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 656,
+    "name": "ORGANIZACION",
+    "note": "Los alumnos podran previamente a la inscripcion realizar consultas con los profesores. Consultar www.direcciongeneral.org.ar/organizacion/index.html"
+  },
+  {
+    "type": "subject",
+    "code": 710,
+    "name": "DINAMICA ESTRATEGICA-OPERACIONAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 718,
+    "name": "CALIDAD Y PRODUCTIVIDAD",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 719,
+    "name": "GESTION DE POLITICAS PUBLICAS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 723,
+    "name": "SEM.APLIC.PROF.ADMIN.SALUD",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 732,
+    "name": "ADMINISTRACION DE TURISMO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 733,
+    "name": "EMPRENDEDOR 21",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 742,
+    "name": "GEST.DEL CAPITAL SOCIAL Y LOS VAL.ETICOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 749,
+    "name": "ADMINISTRACION DE LA SALUD",
+    "note": "Se recomienda tener aprobado el 1er Tramo del Ciclo Profesional"
+  },
+  {
+    "type": "subject",
+    "code": 760,
+    "name": "PRACTICAS PARA LA INCLUSION SOCIAL",
+    "note": "CATEDRA DE HONOR"
+  },
+  {
+    "type": "subject",
+    "code": 761,
+    "name": "GERENCIA SOCIAL PARA EL DESARROLLO",
+    "note": "CATEDRA DE HONOR"
+  },
+  {
+    "type": "subject",
+    "code": 788,
+    "name": "LOGISTICA COMERCIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 789,
+    "name": "COMERCIALIZACION INTERNACIONAL",
+    "note": "Se recomienda tener aprobadas 279. 353, 456, 457 y 458"
+  },
+  {
+    "type": "subject",
+    "code": 790,
+    "name": "TEORIA DE LA DEMANDA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 791,
+    "name": "SEM.ETICA DE LAS OCUPACIONES",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 792,
+    "name": "SEM.GESTION PEQ.Y MED.EMPRESA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 793,
+    "name": "CREATIV.E INNOV.EN ORGANIZACION.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 794,
+    "name": "ADMINISTRACION PUBLICA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 795,
+    "name": "CONDUCCION DE EQUIPOS DE TRABAJO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 796,
+    "name": "COMUNICACIONES EN LAS ORGANIZAC.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 247,
+    "name": "TEORIA CONTABLE",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 277,
+    "name": "GESTION Y COSTOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 351,
+    "name": "SISTEMAS CONTABLES",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 352,
+    "name": "CONTABILIDAD PATRIMONIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 353,
+    "name": "SISTEMAS DE COSTOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 355,
+    "name": "AUDITORIA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 358,
+    "name": "ACTUAC.PROF.JUDICIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 361,
+    "name": "SEM.DE INTEGRACION Y APLICACION",
+    "note": "En los cursos del 3 al 50, se realizar�n reuniones semanales que estar�n a cargo de Profesores Titulares y Asociados que se desempe�ar�n como Tutores"
+  },
+  {
+    "type": "subject",
+    "code": null,
+    "name": "GESTION Y COSTOS",
+    "note": "(362)"
+  },
+  {
+    "type": "subject",
+    "code": 730,
+    "name": "CONTABILIDAD SOCIAL Y AMBIENTAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 744,
+    "name": "ACT.CONT.EN PREV.DE CORRUP.Y LAV.DE ACT.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 766,
+    "name": "ACTUAC.PROF.DEL CONTADOR EN SOC.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 770,
+    "name": "SEM.COSTOS PARA LA TOMA DE DECISIONES",
+    "note": "Seminario Avanzado de Costos"
+  },
+  {
+    "type": "subject",
+    "code": 774,
+    "name": "SIST.DE ADM.FIN.Y CTRL.DEL...",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 775,
+    "name": "SEMINARIO SINDICATURA CONCURSAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 776,
+    "name": "PLANEAMIENTO Y CTRL.PRESUPUEST.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 798,
+    "name": "CONTABILIDAD SUPERIOR",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 251,
+    "name": "INSTITUCIONES DE DHO. PUBLICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 273,
+    "name": "INSTITUCIONES DE DCHO. PRIVADO",
+    "note": "Se recomienda enf�ticamente tener aprobada la asig. Dcho. Econ�mico I al momento de cursar esta materia"
+  },
+  {
+    "type": "subject",
+    "code": 354,
+    "name": "DERECHO DEL TRAB. Y L/SEG.SOCIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 359,
+    "name": "DERECHO ECONOMICO I",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 360,
+    "name": "DERECHO ECONOMICO II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 709,
+    "name": "DERECHO PROCESAL RECURSOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 777,
+    "name": "DERECHO INFORMATICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 786,
+    "name": "DERECHO DE SEGUROS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 250,
+    "name": "MICROECONOMIA I",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 262,
+    "name": "MACROECONOMIA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 278,
+    "name": "MACROECONOMIA Y POLIT. ECONOMICA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 283,
+    "name": "MACROECONOMIA II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 286,
+    "name": "MICROECONOMIA II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 287,
+    "name": "GEOGRAFIA ECONOMICA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 289,
+    "name": "EPISTEMOLOGIA DE LA ECONOMIA",
+    "note": "Se recomienda tener aprobada Hist. del Pensamiento Ec. p/ cursar esta asig."
+  },
+  {
+    "type": "subject",
+    "code": 290,
+    "name": "MICROECONOMIA I",
+    "note": "Cursos para la Carrera de Lic. en Econom�a y Actuario (Econom�a) UNICAMENTE"
+  },
+  {
+    "type": "subject",
+    "code": 552,
+    "name": "DINERO, CREDITO Y BANCOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 553,
+    "name": "HISTORIA D/PENSAMIENTO ECONOMICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 554,
+    "name": "CRECIMIENTO ECONOMICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 555,
+    "name": "ORGANIZACION INDUSTRIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 556,
+    "name": "FINANZAS PUBLICAS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 557,
+    "name": "ESTRUCTURA SOCIAL ARGENTINA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 558,
+    "name": "ECONOMIA INTERNACIONAL",
+    "note": "Se recomienda tener aprobada Cuentas Nacionales p/ cursar esta asig."
+  },
+  {
+    "type": "subject",
+    "code": 559,
+    "name": "DESARROLLO ECONOMICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 560,
+    "name": "ESTRUCTURA ECONOMICA ARGENTINA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 561,
+    "name": "CUENTAS NACIONALES",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 562,
+    "name": "SEMINARIO DE INTEGR. Y APLICACION",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 713,
+    "name": "TOPICOS DE MICROECONOMIA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 724,
+    "name": "ECONOMIA DE LA SEGURIDAD SOCIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 734,
+    "name": "SISTEMAS ECONOMICOS COMPARADOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 745,
+    "name": "ECONOMIA DE LA ENERGIA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 748,
+    "name": "EVALUACION DE PROYECTOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 764,
+    "name": "GESTION EN LA ECONOMIA SOCIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 767,
+    "name": "ECONOMIA MARXISTA",
+    "note": "CATEDRA DE HONOR"
+  },
+  {
+    "type": "subject",
+    "code": 779,
+    "name": "TOPICOS DE MACROECONOMIA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 780,
+    "name": "ECONOMIA AGROPECUARIA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 781,
+    "name": "MERC.DE CAPIT.Y ELEM.DE CAL.FIN.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 782,
+    "name": "ECONOMIA LABORAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 783,
+    "name": "HIST.DEL PENSAMIENTO ECONOM. II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 249,
+    "name": "HISTORIA EC. Y SOCIAL ARGENTINA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 261,
+    "name": "TEORIA POLITICA Y DCHO. PUBLICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 452,
+    "name": "SOCIOLOGIA DE LA ORGANIZACION",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 651,
+    "name": "LOGICA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 721,
+    "name": "PODER ECON�MICO Y DERECHOS HUMANOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 248,
+    "name": "ESTADISTICA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 276,
+    "name": "CALCULO FINANCIERO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 284,
+    "name": "ANALISIS MATEMATICO II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 285,
+    "name": "ESTADISTICA II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 288,
+    "name": "MATEMATICA PARA ECONOMISTAS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 451,
+    "name": "ESTADISTICA PARA ADMINISTRADORES",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 551,
+    "name": "ECONOMETRIA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 717,
+    "name": "MODELOS Y PROYECCIONES ACTUARIALES",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 722,
+    "name": "APRENDIZAJE ESTRUCTURADO: METODO DE CONC",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 731,
+    "name": "ECONOMETRIA II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 746,
+    "name": "COMPUTACION CIENTIFICA -ACTUAR.-",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 750,
+    "name": "METODOS CUANTITATIVOS",
+    "note": "Se recomienda tener aprobada la asig. 248"
+  },
+  {
+    "type": "subject",
+    "code": 751,
+    "name": "ESTADISTICA ACTUARIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 752,
+    "name": "ANALISIS NUMERICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 753,
+    "name": "BIOMETRIA ACTUARIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 754,
+    "name": "TEOR.ACT.DE L/SEGUROS PERSONALES",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 755,
+    "name": "TEOR.ACT.DE L/SEGUROS PATRIMON.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 756,
+    "name": "TEOR.ACT.D/LFONDOS Y PL.D/J.P.S",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 757,
+    "name": "TEORIA DE EQUILIBRIO ACTUARIAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 758,
+    "name": "B.ACT.DE L/INVER. Y FINANCIACION",
+    "note": "Se recomienda tener aprobada 279"
+  },
+  {
+    "type": "subject",
+    "code": 759,
+    "name": "SEMINARIO DE INTEGRACION Y APLICACI",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 763,
+    "name": "TEORIA DE LOS JUEGOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 784,
+    "name": "ANALISIS NUMERICO AVANZADO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 785,
+    "name": "CALCULO FINANCIERO-NUEVO ENFOQUE",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 275,
+    "name": "TECNOLOGIA DE LA INFORMACION",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 652,
+    "name": "TEOR.DE L/LENG.Y SIST.OPERATIVOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 653,
+    "name": "TECNOLOGIA DE LOS COMPUTADORES",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 654,
+    "name": "CONSTRUCC. DE APLIC.INFORMATICAS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 655,
+    "name": "TECNOLOGIA DE COMUNICACIONES",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 657,
+    "name": "SISTEMAS DE DATOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 658,
+    "name": "METODOLOGI.D/LOS SIST.D/INFORMAC.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 659,
+    "name": "AUDITOR.Y CONTR.D/SIST.D/INFOR.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 660,
+    "name": "SEMINARIO DE INTEGRACION Y APLICACI",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 716,
+    "name": "GESTION DE LA INNOVACION Y TECNOL. INF.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 739,
+    "name": "COMERCIO ELECTRONICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 740,
+    "name": "REDES INFORMATICAS",
+    "note": "Se recomienda tener aprobada Tecnolog�a de Comunicaciones (655)"
+  },
+  {
+    "type": "subject",
+    "code": 799,
+    "name": "ADMIN. DE RECURSOS INFORMATICOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 356,
+    "name": "TEORIA Y TECNICA IMPOSITIVA I",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 357,
+    "name": "TEORIA Y TECNICA IMPOSITIVA II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 455,
+    "name": "REGIMEN TRIBUTARIO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 711,
+    "name": "TRIBUTACION EN EL SECTOR AGROPECUARIO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 768,
+    "name": "FINANZAS PUBLICAS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 769,
+    "name": "PROCED.ADMIN.CONTENC.Y FISCAL",
+    "note": "Para poder cursar la asig. deber� tener aprobada: Teor�a y T�c. Imp. II e Inst. de Dcho. P�blico"
+  }
+]
