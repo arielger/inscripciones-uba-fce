@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import data from '../../data/data.json';
+import './index.css'
 
 class DataView extends Component {
   constructor(){
