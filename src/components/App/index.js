@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Filters from '../Filters'
 import DataView from '../DataView'
 import data from '../../data/data.json';
+import config from '../../config.json';
 import './index.css';
 
 class App extends Component {
@@ -11,7 +12,7 @@ class App extends Component {
     this.state = {
       query: {
         subjects: [],
-        places: [],
+        places: config.places,
         schedule: []
       }
     };

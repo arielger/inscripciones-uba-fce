@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import './index.css'
 
 const DataView = ({ data, query }) => {
@@ -14,7 +15,6 @@ const DataView = ({ data, query }) => {
   return (
     <div className="data-section">
       { searchedSubjects.map(subject => <SubjectItem subject={subject} query={query} />)}
-      <pre>{JSON.stringify(query)}</pre>
     </div>
   );
 };
@@ -28,26 +28,52 @@ const SubjectItem = ({ subject, query }) =>
     {subject.chairs.map(chair => <ChairItem chair={chair} query={query} />)}
   </div>;
 
-const ChairItem = ({ chair, query }) =>
-  <div className="chair">
-    <h2 className="chair__title">
-      <span className="chair__title__pre">Catedra </span>
-      {chair.name}
-    </h2>
-    {chair.places
-      .filter(place => query.places.includes(place.name))
-      .map(place =>
-        place.items.map(item => <Item item={item} place={place} />)
-      )
-    }
-  </div>;
+const ChairItem = ({ chair, query }) => {
+  const getItemScheduleList = item =>
+    item.schedule.map(sch => `${sch.day}-${sch.hour}`)
 
-const Item = ({ item, place }) =>
-  <div className="item">
-    <span className="item__code">{item.code}</span>
-    <span className="item__place">{place.name}</span>
-    <span className="item__professor">{item.professor}</span>
-    <span className="item__mode">{item.mode}</span>
-  </div>;
+  const filteredItems = chair.places
+    .filter(place => query.places.includes(place.name))
+    .map(place => place.items.map(item => ({ place: place.name, ...item })))
+    .reduce((acc, current) => acc.concat(current), [])
+    .filter(item =>
+      item.mode === "V" ||
+      getItemScheduleList(item).every(i => query.schedule.includes(i))
+    );
+
+  if (filteredItems.length === 0) return null;
+
+  return (
+    <div className="chair">
+      <h2 className="chair__title">
+        <span className="chair__title__pre">Catedra </span>
+        {chair.name}
+      </h2>
+      {filteredItems.map(item => <Item item={item} />)}
+    </div>
+  );
+};
+
+const Item = ({ item }) => {
+  const scheduleByHour = _.groupBy(item.schedule, obj => obj.hour);
+  const scheduleText = Object.keys(scheduleByHour)
+    .map(key => {
+      const days = scheduleByHour[key].map(dayObj => dayObj.day).join("/");
+      const hour = key;
+
+      return `${days} (${hour})`;
+    })
+    .join(" ");
+
+  return (
+    <div className="item">
+      <span className="item__code">{item.code}</span>
+      <span className="item__place">{item.place}</span>
+      <span className="item__schedule">{scheduleText}</span>
+      <span className="item__professor">{item.professor}</span>
+      <span className="item__mode">{item.mode}</span>
+    </div>
+  );
+};
 
 export default DataView;
