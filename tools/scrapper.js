@@ -77,7 +77,7 @@ const mapRowToObject = $ => row => {
       const schedule = dayList.map(day => {
         return {
           day,
-          hour: (day === 'Sa') ? saturdayTime : normalTime
+          hour: (day === 'Sa' && saturdayTime) ? saturdayTime : normalTime
         };
       })
 
