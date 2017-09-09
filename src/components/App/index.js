@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Filters from '../Filters'
 import DataView from '../DataView'
+import data from '../../data/data.json';
 import './index.css';
 
 class App extends Component {
@@ -10,10 +11,10 @@ class App extends Component {
     this.state = {
       query: {
         subjects: [],
-        places: []
+        places: [],
+        schedule: []
       }
     };
-    
     this.handleQueryChange = this.handleQueryChange.bind(this);
   }
   handleQueryChange(key, value){
@@ -28,7 +29,7 @@ class App extends Component {
     return (
       <div>
         <Filters handleQueryChange={this.handleQueryChange}/>
-        <DataView query={this.state.query} />
+        <DataView data={data} query={this.state.query} />
       </div>
     );
   }
