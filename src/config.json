@@ -1,0 +1,53 @@
+{
+  "originDataURL": "https://servicios.econ.uba.ar/alumnos/oferta/2017-2/OfertaCicloProf.html",
+  "places": [
+    "Cordoba",
+    "Avellaneda",
+    "Paternal",
+    "Pilar",
+    "San Isidro",
+    "Virtual"
+  ],
+  "schedule": [
+    {
+      "value": "7a9",
+      "text": "7 a 9"
+    },
+    {
+      "value": "9a11",
+      "text": "9 a 11"
+    },
+    {
+      "value": "11a13",
+      "text": "11 a 13"
+    },
+    {
+      "value": "13a15",
+      "text": "13 a 15"
+    },
+    {
+      "value": "15a17",
+      "text": "15 a 17"
+    },
+    {
+      "value": "17a19",
+      "text": "17 a 19"
+    },
+    {
+      "value": "19a21",
+      "text": "19 a 21"
+    },
+    {
+      "value": "21a23",
+      "text": "21 a 23"
+    }
+  ],
+  "days": [
+    "Lu",
+    "Ma",
+    "Mi",
+    "Ju",
+    "Vi",
+    "Sa"
+  ]
+}

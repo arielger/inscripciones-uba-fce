@@ -1,0 +1,21 @@
+.filters__place {
+  margin-bottom: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.filters__checkbox {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  border: 2px solid white;
+  margin-right: 18px;
+  font-size: 18px;
+}
+
+.filters__checkbox.active {
+  background-color: #A9E34B;
+  border: none;
+}

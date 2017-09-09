@@ -11,9 +11,7 @@ const request = require('request');
 const cheerio = require('cheerio');
 const _ = require('lodash');
 const jsonfile = require('jsonfile');
-
-const urlMaterias = "https://servicios.econ.uba.ar/alumnos/oferta/2017-2/OfertaCicloProf.html";
-const places = ['Avellaneda', 'Paternal', 'Pilar', 'San Isidro', 'Virtual', 'Cordoba'];
+const { originDataURL, places } = require('../src/config.json');
 const rowsBackgroundColor = [
   { type: "subject", color: '#666666' },
   { type: "chair", color: '#CCCCCC' }
@@ -118,7 +116,7 @@ const createJSONStructure = (subjects, row) => {
   return subjects;
 };
 
-request(urlMaterias, (err, response, html) => {
+request(originDataURL, (err, response, html) => {
   const $ = cheerio.load(html);
   const rows = $('table tr');
   const result = rows
