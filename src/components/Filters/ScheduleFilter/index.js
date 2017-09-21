@@ -2,15 +2,23 @@ import React, { Component } from 'react';
 import { schedule, days } from '../../../config.json';
 import './index.css';
 
-const DailyCheckboxColumn = ({ day, handleChange }) =>
+const fullSchedule = schedule.reduce((acc, hour) =>
+  acc.concat(days.map(day => `${day}-${hour.value}`))
+, []);
+
+const DailyCheckboxColumn = ({ day, handleChange, selectedValues }) =>
   <div className="filters__hours__column">
     <span className="filters__hours__day">{day}</span>
     { schedule.map(hour =>
       <label className="filters__hours__label">
         <input
           className="filters__hours__checkbox-input"
-          type="checkbox" name="hour" style={{ display: 'none' }}
-          value={`${day}-${hour.value}`} onChange={handleChange}
+          type="checkbox"
+          name="hour"
+          style={{ display: 'none' }}
+          value={`${day}-${hour.value}`}
+          onChange={handleChange}
+          checked={selectedValues.find(i => (i === `${day}-${hour.value}`)) !== undefined}
         />
         <div className="filters__hours__checkbox" />
       </label>
@@ -21,7 +29,7 @@ class ScheduleFilter extends Component {
   constructor() {
     super();
 
-    this.state = { schedule: [] };
+    this.state = { schedule: fullSchedule };
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(event) {
@@ -46,7 +54,13 @@ class ScheduleFilter extends Component {
           <div className="filters__hours-column">
             { schedule.map(hour => <span className="filters__hours__item">{hour.text}</span> )}
           </div>
-          {days.map(day => <DailyCheckboxColumn day={day} handleChange={this.handleChange} />)}
+          {days.map(day =>
+            <DailyCheckboxColumn
+              day={day}
+              handleChange={this.handleChange}
+              selectedValues={this.state.schedule}
+            />
+          )}
         </div>
       </div>
     );
