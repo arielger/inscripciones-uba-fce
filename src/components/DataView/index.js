@@ -14,7 +14,9 @@ const DataView = ({ data, query }) => {
 
   return (
     <div className="data-section">
-      { searchedSubjects.map(subject => <SubjectItem subject={subject} query={query} />)}
+      { searchedSubjects.map(subject =>
+        <SubjectItem key={subject.name} subject={subject} query={query} />
+      )}
     </div>
   );
 };
@@ -25,7 +27,9 @@ const SubjectItem = ({ subject, query }) =>
       <span className="subject__title__code">{subject.code}</span>
       <span className="subject__title__text">{subject.name}</span>
     </h1>
-    {subject.chairs.map(chair => <ChairItem chair={chair} query={query} />)}
+    {subject.chairs.map(chair =>
+      <ChairItem key={chair.name} chair={chair} query={query} />
+    )}
   </div>;
 
 const ChairItem = ({ chair, query }) => {
@@ -49,10 +53,23 @@ const ChairItem = ({ chair, query }) => {
         <span className="chair__title__pre">Catedra </span>
         {chair.name}
       </h2>
-      {filteredItems.map(item => <Item item={item} />)}
+      {filteredItems.map(item =>
+        <Item
+          key={`${item.code}-${item.mode}-${item.professor}`}
+          item={item}
+        />
+      )}
     </div>
   );
 };
+
+
+const getClassFromMode = (mode) => {
+  if (mode === 'R' || mode === 'R+') return 'regular';
+  if (mode === 'V') return 'virtual';
+  if (mode === 'D') return 'distancia';
+  return '';
+}
 
 const Item = ({ item }) => {
   const scheduleByHour = _.groupBy(item.schedule, obj => obj.hour);
@@ -71,7 +88,7 @@ const Item = ({ item }) => {
       <span className="item__place">{item.place}</span>
       <span className="item__schedule">{scheduleText}</span>
       <span className="item__professor">{item.professor}</span>
-      <span className="item__mode">{item.mode}</span>
+      <span className={`item__mode ${getClassFromMode(item.mode)}`}>{item.mode}</span>
     </div>
   );
 };

@@ -40,7 +40,9 @@ class PlacesFilter extends Component {
         <label className="filters__label">Sedes</label>
         {places.map(place =>
           <PlaceCheckboxItem
-            place={place} handleChange={this.handleChange}
+            key={place}
+            place={place}
+            handleChange={this.handleChange}
             isActive={this.state.places.includes(place)}
           />
         )}

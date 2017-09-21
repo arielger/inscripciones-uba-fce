@@ -10,7 +10,7 @@ const DailyCheckboxColumn = ({ day, handleChange, selectedValues }) =>
   <div className="filters__hours__column">
     <span className="filters__hours__day">{day}</span>
     { schedule.map(hour =>
-      <label className="filters__hours__label">
+      <label className="filters__hours__label" key={`${day}-${hour.value}`}>
         <input
           className="filters__hours__checkbox-input"
           type="checkbox"
@@ -52,10 +52,13 @@ class ScheduleFilter extends Component {
         <label className="filters__label">Días y horarios</label>
         <div className="filters__hours">
           <div className="filters__hours-column">
-            { schedule.map(hour => <span className="filters__hours__item">{hour.text}</span> )}
+            { schedule.map(hour =>
+              <span key={hour.text} className="filters__hours__item">{hour.text}</span>
+            )}
           </div>
           {days.map(day =>
             <DailyCheckboxColumn
+              key={day}
               day={day}
               handleChange={this.handleChange}
               selectedValues={this.state.schedule}
