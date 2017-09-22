@@ -8,6 +8,7 @@
         - item
 */
 const request = require('request');
+const iconv = require('iconv-lite');
 const cheerio = require('cheerio');
 const _ = require('lodash');
 const jsonfile = require('jsonfile');
@@ -40,7 +41,7 @@ const mapRowToObject = $ => row => {
   }
 
   if (rowTypeByBackgroundColor === 'chair') {
-    const chairName = rowText.replace('C�t:', '');
+    const chairName = rowText.replace('Cát:', '');
     return ({
       type: 'chair',
       name: chairName,
@@ -116,8 +117,12 @@ const createJSONStructure = (subjects, row) => {
   return subjects;
 };
 
-request(originDataURL, (err, response, html) => {
-  const $ = cheerio.load(html);
+request({
+  url: originDataURL,
+  encoding: null
+}, (err, response, body) => {
+  var utf8String = iconv.decode(new Buffer(body), "ISO-8859-1");
+  const $ = cheerio.load(utf8String);
   const rows = $('table tr');
   const result = rows
     .toArray()

@@ -194,7 +194,7 @@
               {
                 "type": "item",
                 "code": 11,
-                "professor": "Qui�ones Brun Maria Ladi",
+                "professor": "Quiñones Brun Maria Ladi",
                 "mode": "R+",
                 "schedule": [
                   {
@@ -241,7 +241,7 @@
       },
       {
         "type": "chair",
-        "name": "Prof Em�rito ETKIN JORGE RICARDO",
+        "name": "Prof Emérito ETKIN JORGE RICARDO",
         "places": [
           {
             "type": "place",
@@ -2994,7 +2994,7 @@
               {
                 "type": "item",
                 "code": 12,
-                "professor": "Nu�ez Catalino",
+                "professor": "Nuñez Catalino",
                 "mode": "R",
                 "schedule": [
                   {
@@ -3334,7 +3334,7 @@
               {
                 "type": "item",
                 "code": 12,
-                "professor": "Dias Nu�ez Andrea Fernanda",
+                "professor": "Dias Nuñez Andrea Fernanda",
                 "mode": "R+",
                 "schedule": [
                   {
@@ -4014,7 +4014,7 @@
               {
                 "type": "item",
                 "code": 10,
-                "professor": "Nu�ez Catalino",
+                "professor": "Nuñez Catalino",
                 "mode": "R",
                 "schedule": [
                   {
@@ -4095,7 +4095,7 @@
       },
       {
         "type": "chair",
-        "name": "Prof Em�rito ETKIN JORGE RICARDO",
+        "name": "Prof Emérito ETKIN JORGE RICARDO",
         "places": [
           {
             "type": "place",
@@ -4378,7 +4378,7 @@
               {
                 "type": "item",
                 "code": 19,
-                "professor": "Qui�ones Brun Maria Ladi",
+                "professor": "Quiñones Brun Maria Ladi",
                 "mode": "R+",
                 "schedule": [
                   {
@@ -4569,7 +4569,7 @@
     "chairs": [
       {
         "type": "chair",
-        "name": "Prof Em�rito LEVY ALBERTO RAMON",
+        "name": "Prof Emérito LEVY ALBERTO RAMON",
         "places": [
           {
             "type": "place",
@@ -5824,7 +5824,7 @@
               {
                 "type": "item",
                 "code": 6,
-                "professor": "Fernandez Nu�ez Maria Eugenia",
+                "professor": "Fernandez Nuñez Maria Eugenia",
                 "mode": "R",
                 "schedule": [
                   {
@@ -6846,7 +6846,7 @@
               {
                 "type": "item",
                 "code": 6,
-                "professor": "Iba�ez Daniel Mariano",
+                "professor": "Ibañez Daniel Mariano",
                 "mode": "R",
                 "schedule": [
                   {
@@ -7759,7 +7759,7 @@
       },
       {
         "type": "chair",
-        "name": "Prof Em�rito PAHLEN RICARDO JOSE M",
+        "name": "Prof Emérito PAHLEN RICARDO JOSE M",
         "places": [
           {
             "type": "place",
@@ -9264,7 +9264,7 @@
               {
                 "type": "item",
                 "code": 23,
-                "professor": "Mu�oz Bernart Oscar Santiago",
+                "professor": "Muñoz Bernart Oscar Santiago",
                 "mode": "R",
                 "schedule": [
                   {
@@ -9950,7 +9950,7 @@
               {
                 "type": "item",
                 "code": 26,
-                "professor": "Tu�ez Fernando Adrian",
+                "professor": "Tuñez Fernando Adrian",
                 "mode": "R",
                 "schedule": [
                   {
@@ -10331,7 +10331,7 @@
       },
       {
         "type": "chair",
-        "name": "Prof Interino Asociado a/C. ORE�A EDUARDO",
+        "name": "Prof Interino Asociado a/C. OREÑA EDUARDO",
         "places": [
           {
             "type": "place",
@@ -10356,7 +10356,7 @@
               {
                 "type": "item",
                 "code": 12,
-                "professor": "Ore�a Eduardo -Gomez Stella Maris",
+                "professor": "Oreña Eduardo -Gomez Stella Maris",
                 "mode": "R",
                 "schedule": [
                   {
@@ -10517,7 +10517,7 @@
     "type": "subject",
     "code": 361,
     "name": "SEM.DE INTEGRACION Y APLICACION",
-    "note": "En los cursos del 3 al 50, se realizar�n reuniones semanales que estar�n a cargo de Profesores Titulares y Asociados que se desempe�ar�n como Tutores",
+    "note": "En los cursos del 3 al 50, se realizarán reuniones semanales que estarán a cargo de Profesores Titulares y Asociados que se desempeñarán como Tutores",
     "chairs": [
       {
         "type": "chair",
@@ -11651,7 +11651,7 @@
       },
       {
         "type": "chair",
-        "name": "Prof Em�rito FRONTI LUISA",
+        "name": "Prof Emérito FRONTI LUISA",
         "places": [
           {
             "type": "place",
@@ -11675,7 +11675,7 @@
       },
       {
         "type": "chair",
-        "name": "Prof Em�rito PAHLEN RICARDO JOSE M",
+        "name": "Prof Emérito PAHLEN RICARDO JOSE M",
         "places": [
           {
             "type": "place",
@@ -13025,7 +13025,7 @@
     "type": "subject",
     "code": 273,
     "name": "INSTITUCIONES DE DCHO. PRIVADO",
-    "note": "Se recomienda enf�ticamente tener aprobada la asig. Dcho. Econ�mico I al momento de cursar esta materia",
+    "note": "Se recomienda enfáticamente tener aprobada la asig. Dcho. Económico I al momento de cursar esta materia",
     "chairs": [
       {
         "type": "chair",
@@ -14738,7 +14738,7 @@
               {
                 "type": "item",
                 "code": 14,
-                "professor": "Avenda�o Hector Ruben",
+                "professor": "Avendaño Hector Ruben",
                 "mode": "R",
                 "schedule": [
                   {
@@ -15144,7 +15144,7 @@
               {
                 "type": "item",
                 "code": 4,
-                "professor": "Mu�oz Sarmiento Gustavo",
+                "professor": "Muñoz Sarmiento Gustavo",
                 "mode": "R",
                 "schedule": [
                   {
@@ -15590,7 +15590,7 @@
               {
                 "type": "item",
                 "code": 27,
-                "professor": "Pi�eiro Monica Delia",
+                "professor": "Piñeiro Monica Delia",
                 "mode": "R",
                 "schedule": [
                   {
@@ -16152,7 +16152,7 @@
               {
                 "type": "item",
                 "code": 4,
-                "professor": "Salda�a Cristian Daniel Horacio",
+                "professor": "Saldaña Cristian Daniel Horacio",
                 "mode": "R",
                 "schedule": [
                   {
@@ -16232,7 +16232,7 @@
               {
                 "type": "item",
                 "code": 8,
-                "professor": "Wi�azky Marcelo Rodrigo",
+                "professor": "Wiñazky Marcelo Rodrigo",
                 "mode": "R",
                 "schedule": [
                   {
@@ -16298,7 +16298,7 @@
               {
                 "type": "item",
                 "code": 11,
-                "professor": "Barre�a Mariana Gloria",
+                "professor": "Barreña Mariana Gloria",
                 "mode": "R",
                 "schedule": [
                   {
@@ -17221,7 +17221,7 @@
     "type": "subject",
     "code": 290,
     "name": "MICROECONOMIA I",
-    "note": "Cursos para la Carrera de Lic. en Econom�a y Actuario (Econom�a) UNICAMENTE",
+    "note": "Cursos para la Carrera de Lic. en Economía y Actuario (Economía) UNICAMENTE",
     "chairs": [
       {
         "type": "chair",
@@ -18182,7 +18182,7 @@
               {
                 "type": "item",
                 "code": 4,
-                "professor": "Espa�ol Paula Irene",
+                "professor": "Español Paula Irene",
                 "mode": "R",
                 "schedule": [
                   {
@@ -18234,7 +18234,7 @@
               {
                 "type": "item",
                 "code": 2,
-                "professor": "Gra�a Juan Martin",
+                "professor": "Graña Juan Martin",
                 "mode": "R",
                 "schedule": [
                   {
@@ -19578,7 +19578,7 @@
               {
                 "type": "item",
                 "code": 30,
-                "professor": "Mari�ansky Martin Pablo",
+                "professor": "Mariñansky Martin Pablo",
                 "mode": "R",
                 "schedule": [
                   {
@@ -19679,7 +19679,7 @@
       },
       {
         "type": "chair",
-        "name": "Prof Em�rito RAPOPORT MARIO DANIEL",
+        "name": "Prof Emérito RAPOPORT MARIO DANIEL",
         "places": [
           {
             "type": "place",
@@ -20062,7 +20062,7 @@
               {
                 "type": "item",
                 "code": 1,
-                "professor": "Del Acebo Iba�ez Enrique",
+                "professor": "Del Acebo Ibañez Enrique",
                 "mode": "R",
                 "schedule": [
                   {
@@ -20486,12 +20486,12 @@
   {
     "type": "subject",
     "code": 721,
-    "name": "PODER ECON�MICO Y DERECHOS HUMANOS",
+    "name": "PODER ECONÓMICO Y DERECHOS HUMANOS",
     "note": "",
     "chairs": [
       {
         "type": "chair",
-        "name": "Prof Honorario MORALES DE CORTI�AS NORA IRMA",
+        "name": "Prof Honorario MORALES DE CORTIÑAS NORA IRMA",
         "places": [
           {
             "type": "place",
@@ -22925,7 +22925,7 @@
     "chairs": [
       {
         "type": "chair",
-        "name": "Prof Em�rito CASPARRI MARIA TERESA",
+        "name": "Prof Emérito CASPARRI MARIA TERESA",
         "places": [
           {
             "type": "place",
@@ -23377,7 +23377,7 @@
     "chairs": [
       {
         "type": "chair",
-        "name": "Prof Em�rito BRUFMAN JUANA ZULEMA",
+        "name": "Prof Emérito BRUFMAN JUANA ZULEMA",
         "places": [
           {
             "type": "place",
@@ -25447,7 +25447,7 @@
     "type": "subject",
     "code": 740,
     "name": "REDES INFORMATICAS",
-    "note": "Se recomienda tener aprobada Tecnolog�a de Comunicaciones (655)",
+    "note": "Se recomienda tener aprobada Tecnología de Comunicaciones (655)",
     "chairs": [
       {
         "type": "chair",
@@ -25817,7 +25817,7 @@
       },
       {
         "type": "chair",
-        "name": "Prof Regular Asociado a/C. I�IGUEZ LILIANA",
+        "name": "Prof Regular Asociado a/C. IÑIGUEZ LILIANA",
         "places": [
           {
             "type": "place",
@@ -25910,7 +25910,7 @@
               {
                 "type": "item",
                 "code": 15,
-                "professor": "I�iguez Liliana",
+                "professor": "Iñiguez Liliana",
                 "mode": "R",
                 "schedule": [
                   {
@@ -26204,7 +26204,7 @@
               {
                 "type": "item",
                 "code": 28,
-                "professor": "Mu�oz Raul Alberto",
+                "professor": "Muñoz Raul Alberto",
                 "mode": "R",
                 "schedule": [
                   {
@@ -27357,7 +27357,7 @@
     "type": "subject",
     "code": 769,
     "name": "PROCED.ADMIN.CONTENC.Y FISCAL",
-    "note": "Para poder cursar la asig. deber� tener aprobada: Teor�a y T�c. Imp. II e Inst. de Dcho. P�blico",
+    "note": "Para poder cursar la asig. deberá tener aprobada: Teoría y Téc. Imp. II e Inst. de Dcho. Público",
     "chairs": [
       {
         "type": "chair",

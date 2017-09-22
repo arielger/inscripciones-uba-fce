@@ -225,7 +225,7 @@
     "type": "subject",
     "code": 361,
     "name": "SEM.DE INTEGRACION Y APLICACION",
-    "note": "En los cursos del 3 al 50, se realizar�n reuniones semanales que estar�n a cargo de Profesores Titulares y Asociados que se desempe�ar�n como Tutores"
+    "note": "En los cursos del 3 al 50, se realizarán reuniones semanales que estarán a cargo de Profesores Titulares y Asociados que se desempeñarán como Tutores"
   },
   {
     "type": "subject",
@@ -291,7 +291,7 @@
     "type": "subject",
     "code": 273,
     "name": "INSTITUCIONES DE DCHO. PRIVADO",
-    "note": "Se recomienda enf�ticamente tener aprobada la asig. Dcho. Econ�mico I al momento de cursar esta materia"
+    "note": "Se recomienda enfáticamente tener aprobada la asig. Dcho. Económico I al momento de cursar esta materia"
   },
   {
     "type": "subject",
@@ -375,7 +375,7 @@
     "type": "subject",
     "code": 290,
     "name": "MICROECONOMIA I",
-    "note": "Cursos para la Carrera de Lic. en Econom�a y Actuario (Econom�a) UNICAMENTE"
+    "note": "Cursos para la Carrera de Lic. en Economía y Actuario (Economía) UNICAMENTE"
   },
   {
     "type": "subject",
@@ -542,7 +542,7 @@
   {
     "type": "subject",
     "code": 721,
-    "name": "PODER ECON�MICO Y DERECHOS HUMANOS",
+    "name": "PODER ECONÓMICO Y DERECHOS HUMANOS",
     "note": ""
   },
   {
@@ -759,7 +759,7 @@
     "type": "subject",
     "code": 740,
     "name": "REDES INFORMATICAS",
-    "note": "Se recomienda tener aprobada Tecnolog�a de Comunicaciones (655)"
+    "note": "Se recomienda tener aprobada Tecnología de Comunicaciones (655)"
   },
   {
     "type": "subject",
@@ -801,6 +801,6 @@
     "type": "subject",
     "code": 769,
     "name": "PROCED.ADMIN.CONTENC.Y FISCAL",
-    "note": "Para poder cursar la asig. deber� tener aprobada: Teor�a y T�c. Imp. II e Inst. de Dcho. P�blico"
+    "note": "Para poder cursar la asig. deberá tener aprobada: Teoría y Téc. Imp. II e Inst. de Dcho. Público"
   }
 ]
