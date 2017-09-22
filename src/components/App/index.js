@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import Filters from '../Filters'
 import DataView from '../DataView'
 import data from '../../data/data.json';
-import config from '../../config.json';
+import config, { schedule, days } from '../../config.json';
 import './index.css';
+
+const fullSchedule = schedule.reduce((acc, hour) =>
+  acc.concat(days.map(day => `${day}-${hour.value}`))
+, []);
 
 class App extends Component {
   constructor() {
@@ -13,7 +17,7 @@ class App extends Component {
       query: {
         subjects: [],
         places: config.places,
-        schedule: []
+        schedule: fullSchedule
       }
     };
     this.handleQueryChange = this.handleQueryChange.bind(this);
@@ -29,7 +33,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Filters handleQueryChange={this.handleQueryChange}/>
+        <Filters query={this.state.query} handleQueryChange={this.handleQueryChange} />
         <DataView data={data} query={this.state.query} />
       </div>
     );
