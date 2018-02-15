@@ -1,5 +1,6 @@
 {
-  "originDataURL": "https://servicios.econ.uba.ar/alumnos/oferta/2017-2/OfertaCicloProf.html",
+  "originDataURL":
+    "https://servicios.econ.uba.ar/alumnos/oferta/2018-1/OfertaCicloProf.html",
   "places": [
     "Cordoba",
     "Avellaneda",
@@ -42,12 +43,5 @@
       "text": "21 a 23"
     }
   ],
-  "days": [
-    "Lu",
-    "Ma",
-    "Mi",
-    "Ju",
-    "Vi",
-    "Sa"
-  ]
+  "days": ["Lu", "Ma", "Mi", "Ju", "Vi", "Sa"]
 }

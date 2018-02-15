@@ -445,6 +445,12 @@
   },
   {
     "type": "subject",
+    "code": 712,
+    "name": "GENERO Y ECONOMIA",
+    "note": ""
+  },
+  {
+    "type": "subject",
     "code": 713,
     "name": "TOPICOS DE MICROECONOMIA",
     "note": ""
@@ -481,20 +487,20 @@
   },
   {
     "type": "subject",
+    "code": 765,
+    "name": "ECONOMIA AMBIENTAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
     "code": 767,
     "name": "ECONOMIA MARXISTA",
-    "note": "CATEDRA DE HONOR"
+    "note": ""
   },
   {
     "type": "subject",
     "code": 779,
     "name": "TOPICOS DE MACROECONOMIA",
-    "note": ""
-  },
-  {
-    "type": "subject",
-    "code": 780,
-    "name": "ECONOMIA AGROPECUARIA",
     "note": ""
   },
   {
@@ -607,8 +613,8 @@
   },
   {
     "type": "subject",
-    "code": 746,
-    "name": "COMPUTACION CIENTIFICA -ACTUAR.-",
+    "code": 741,
+    "name": "ELEM. DE TOPOLOGIA PARA ECON. Y GESTION",
     "note": ""
   },
   {
@@ -679,12 +685,6 @@
   },
   {
     "type": "subject",
-    "code": 784,
-    "name": "ANALISIS NUMERICO AVANZADO",
-    "note": ""
-  },
-  {
-    "type": "subject",
     "code": 785,
     "name": "CALCULO FINANCIERO-NUEVO ENFOQUE",
     "note": ""
@@ -747,12 +747,6 @@
     "type": "subject",
     "code": 716,
     "name": "GESTION DE LA INNOVACION Y TECNOL. INF.",
-    "note": ""
-  },
-  {
-    "type": "subject",
-    "code": 739,
-    "name": "COMERCIO ELECTRONICO",
     "note": ""
   },
   {
