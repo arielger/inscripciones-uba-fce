@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://arielger.github.io/inscripciones-uba-fce",
+  "engines": {
+    "node": "8.11.0",
+    "yarn": "1.3.2"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "gh-pages": "^1.0.0",
@@ -11,7 +15,7 @@
     "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.13",
+    "react-scripts": "1.1.4",
     "react-select": "^1.0.0-rc.5",
     "request": "^2.81.0"
   },
