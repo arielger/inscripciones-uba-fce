@@ -1,22 +1,26 @@
 .data-section {
-  margin-left: 440px;
+  margin-left: 340px;
   height: 100vh;
   background-color: #f8f9fa;
   overflow-y: scroll;
-  padding: 60px;
+  padding: 40px 35px;
   font-weight: 400;
 }
 
+.subject {
+  margin-bottom: 56px;
+}
+
 .subject__title {
-  font-size: 36px;
+  font-size: 32px;
   display: flex;
   align-items: center;
 }
 
 .subject__title__code {
-  background-color: #94D82D;
+  background-color: #94d82d;
   border-radius: 30px;
-  font-size: 24px;
+  font-size: 18px;
   color: white;
   margin-right: 16px;
   letter-spacing: 1px;
@@ -25,67 +29,6 @@
 }
 
 .subject__title__text {
-  font-size: 36px;
-  color: #343A40;
+  font-size: 32px;
+  color: #343a40;
 }
-
-.chair {
-  margin-bottom: 40px;
-}
-
-.chair__title {
-  font-size: 24px;
-  color: #495057;
-  font-weight: 500;
-}
-
-.chair__title__pre {
-  color: #ADB5BD;
-  font-weight: 400;
-}
-
-.item {
-  background-color: #f1f3f5;
-  border-radius: 3px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-  height: 50px;
-}
-
-.item__code {
-  background-color: #dee2e6;
-  color: #868e96;
-  border-radius: 3px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  font-weight: 500;
-}
-
-.item__place {
-  flex-basis: 10%;
-}
-
-.item__schedule {
-  flex-basis: 20%;
-}
-
-.item__professor {
-  flex-basis: 50%;
-  white-space: nowrap;
-}
-
-.item__mode {
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  color: white;
-}
-
-.item__mode.regular { background-color: #a9e34b; }
-.item__mode.virtual { background-color: #329af0; }
-.item__mode.distancia { background-color: #fcc419; }

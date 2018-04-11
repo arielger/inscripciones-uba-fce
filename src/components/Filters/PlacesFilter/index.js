@@ -1,51 +1,31 @@
-import React, { Component } from 'react';
-import { places } from '../../../config.json';
-import './index.css';
+import React, { Component } from "react";
+import { Checkbox } from "antd";
+import { places } from "../../../config.json";
+import "./index.css";
 
-const PlaceCheckboxItem = ({ place, handleChange, isActive }) =>
-  <label className="filters__place">
-    <div className={`filters__checkbox ${isActive ? 'active' : ''}`} />
-    <input
-      type="checkbox" name="place" value={place} style={{ display: 'none' }}
-      checked={isActive} onChange={handleChange}
-    />
-    <span>{place}</span>
-  </label>;
+const CheckboxGroup = Checkbox.Group;
 
 class PlacesFilter extends Component {
-  constructor() {
-    super();
+  state = { places };
 
-    // Init state with all the places as active
-    this.state = { places };
-    this.handleChange = this.handleChange.bind(this);
-  }
-  handleChange(event) {
-    const target = event.target;
+  handleChange = selectedPlaces => {
+    this.setState({ selectedPlaces }, () => {
+      this.props.handleQueryChange("places", selectedPlaces);
+    });
+  };
 
-    this.setState(
-      state => ({
-        places: target.checked ?
-          state.places.concat(target.value) :
-          state.places.filter(p => (p !== target.value))
-      }),
-      () => {
-        this.props.handleQueryChange('places', this.state.places)
-      }
-    );
-  }
   render() {
     return (
-      <div className="filters__section">
+      <div className="filters__section places-filter">
         <label className="filters__label">Sedes</label>
-        {places.map(place =>
-          <PlaceCheckboxItem
-            key={place}
-            place={place}
-            handleChange={this.handleChange}
-            isActive={this.state.places.includes(place)}
-          />
-        )}
+        <CheckboxGroup
+          options={places.map(place => ({
+            label: place,
+            value: place
+          }))}
+          defaultValue={this.state.places}
+          onChange={this.handleChange}
+        />
       </div>
     );
   }

@@ -1,12 +1,11 @@
 .filters-sidebar {
-  width: 440px;
-  background-color: #212529;
+  width: 340px;
+  border: 1px solid #ebedf0;
   height: 100vh;
-  padding: 60px 30px;
+  padding: 40px 15px;
   position: absolute;
   top: 0;
   left: 0;
-  color: rgba(255, 255, 255, 0.84);
   overflow-y: scroll;
 }
 

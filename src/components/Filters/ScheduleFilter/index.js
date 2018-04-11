@@ -1,55 +1,85 @@
-import React from 'react';
-import { schedule, days } from '../../../config.json';
-import './index.css';
+import React from "react";
+import _ from "lodash";
+import { Table, Checkbox } from "antd";
+import { schedule, days } from "../../../config.json";
+import "./index.css";
 
-const handleCheckboxChange = (event, schedule, handleChange) => {
-  const target = event.target;
+class ScheduleFilter extends React.Component {
+  constructor() {
+    super();
 
-  handleChange(
-    'schedule',
-    target.checked ?
-      schedule.concat(target.value) :
-      schedule.filter(p => (p !== target.value))
-  );
-}
+    const daysColumnsData = days.map(day => {
+      const key = day.toLowerCase();
+      return {
+        title: day,
+        key: key,
+        dataIndex: key,
+        render: ({ isActive, value }) => (
+          <Checkbox
+            checked={isActive}
+            onChange={this.handleCheckboxChange}
+            value={value}
+          >
+            {value}
+          </Checkbox>
+        )
+      };
+    });
+    this.columnsData = [
+      {
+        title: "Horarios",
+        key: "Horarios",
+        dataIndex: "hour"
+      },
+      ...daysColumnsData
+    ];
+  }
 
-const DailyCheckboxColumn = ({ day, handleChange, selectedSchedule }) =>
-  <div className="filters__hours__column">
-    <span className="filters__hours__day">{day}</span>
-    { schedule.map(hour =>
-      <label className="filters__hours__label" key={`${day}-${hour.value}`}>
-        <input
-          className="filters__hours__checkbox-input"
-          type="checkbox"
-          name="hour"
-          style={{ display: 'none' }}
-          value={`${day}-${hour.value}`}
-          onChange={(event) => (handleCheckboxChange(event, selectedSchedule, handleChange))}
-          checked={selectedSchedule.find(i => (i === `${day}-${hour.value}`)) !== undefined}
+  handleCheckboxChange = event => {
+    const target = event.target;
+    const { selectedSchedule, handleQueryChange } = this.props;
+
+    handleQueryChange(
+      "schedule",
+      target.checked
+        ? selectedSchedule.concat(target.value)
+        : selectedSchedule.filter(p => p !== target.value)
+    );
+  };
+
+  render() {
+    const { selectedSchedule } = this.props;
+
+    // Create a row for each period of time of the day
+    // with attributes for each day (lu, ma, mi, ...)
+    const data = schedule.map(sch => ({
+      key: sch.text,
+      hour: sch.text,
+      ..._.zipObject(
+        days.map(d => d.toLowerCase()),
+        days.map(d => {
+          const value = `${d}-${sch.value}`;
+          return {
+            value,
+            isActive: selectedSchedule.includes(value)
+          };
+        })
+      )
+    }));
+
+    return (
+      <div className="filters__section schedule-filter">
+        <label className="filters__label">Días y horarios</label>
+        <Table
+          bordered
+          size="small"
+          pagination={false}
+          columns={this.columnsData}
+          dataSource={data}
         />
-        <div className="filters__hours__checkbox" />
-      </label>
-    )}
-  </div>;
-
-const ScheduleFilter = ({ selectedSchedule, handleQueryChange }) =>
-  <div className="filters__section">
-    <label className="filters__label">Días y horarios</label>
-    <div className="filters__hours">
-      <div className="filters__hours-column">
-        {schedule.map(hour =>
-          <span key={hour.text} className="filters__hours__item">{hour.text}</span>
-        )}
       </div>
-      {days.map(day =>
-        <DailyCheckboxColumn
-          key={day}
-          day={day}
-          handleChange={handleQueryChange}
-          selectedSchedule={selectedSchedule}
-        />
-      )}
-    </div>
-  </div>;
+    );
+  }
+}
 
 export default ScheduleFilter;

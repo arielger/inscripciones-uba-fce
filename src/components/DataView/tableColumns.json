@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Cod.",
+    "dataIndex": "code",
+    "align": "center",
+    "width": "8%"
+  },
+  {
+    "title": "Sede",
+    "dataIndex": "place",
+    "width": "10%"
+  },
+  {
+    "title": "Horarios",
+    "dataIndex": "schedule",
+    "width": "20%"
+  },
+  {
+    "title": "Cátedra",
+    "dataIndex": "chair",
+    "width": "31%"
+  },
+  {
+    "title": "Profesor",
+    "dataIndex": "professor",
+    "width": "31%"
+  }
+]

@@ -1,94 +1,97 @@
-import React from 'react';
-import _ from 'lodash';
-import './index.css'
+import React from "react";
+import _ from "lodash";
+import { Table } from "antd";
+import tableColumns from "./tableColumns.json";
+import "./index.css";
 
-const DataView = ({ data, query }) => {
-  const searchedSubjects = data
-    .filter(subject => query.subjects.includes(subject.code));
-
-  if (searchedSubjects.length === 0) {
-    return (
-      <div className="data-section">No hay materias seleccionadas.</div>
-    );
-  }
-
-  return (
-    <div className="data-section">
-      { searchedSubjects.map(subject =>
-        <SubjectItem key={subject.name} subject={subject} query={query} />
-      )}
-    </div>
-  );
+// Get display name for chair
+const getChairPersonName = name => {
+  const uppercaseWordsRegex = /\b[A-Z]{2,}\b/g;
+  return _.startCase(_.toLower(name.match(uppercaseWordsRegex).join(" ")));
 };
 
-const SubjectItem = ({ subject, query }) =>
-  <div className="subject">
-    <h1 className="subject__title">
-      <span className="subject__title__code">{subject.code}</span>
-      <span className="subject__title__text">{subject.name}</span>
-    </h1>
-    {subject.chairs.map(chair =>
-      <ChairItem key={chair.name} chair={chair} query={query} />
-    )}
-  </div>;
+const getItemScheduleList = item =>
+  item.schedule.map(sch => `${sch.day}-${sch.hour}`);
 
-const ChairItem = ({ chair, query }) => {
-  const getItemScheduleList = item =>
-    item.schedule.map(sch => `${sch.day}-${sch.hour}`)
-
-  const filteredItems = chair.places
-    .filter(place => query.places.includes(place.name))
-    .map(place => place.items.map(item => ({ place: place.name, ...item })))
-    .reduce((acc, current) => acc.concat(current), [])
-    .filter(item =>
-      item.mode === "V" ||
-      getItemScheduleList(item).every(i => query.schedule.includes(i))
-    );
-
-  if (filteredItems.length === 0) return null;
-
-  return (
-    <div className="chair">
-      <h2 className="chair__title">
-        <span className="chair__title__pre">Catedra </span>
-        {chair.name}
-      </h2>
-      {filteredItems.map(item =>
-        <Item
-          key={`${item.code}-${item.mode}-${item.professor}`}
-          item={item}
-        />
-      )}
-    </div>
-  );
-};
-
-
-const getClassFromMode = (mode) => {
-  if (mode === 'R' || mode === 'R+') return 'regular';
-  if (mode === 'V') return 'virtual';
-  if (mode === 'D') return 'distancia';
-  return '';
-}
-
-const Item = ({ item }) => {
-  const scheduleByHour = _.groupBy(item.schedule, obj => obj.hour);
-  const scheduleText = Object.keys(scheduleByHour)
+// Get display text for schedule (group by schedule hours)
+const getItemScheduleText = item => {
+  const itemScheduleByHour = _.groupBy(item.schedule, obj => obj.hour);
+  return Object.keys(itemScheduleByHour)
     .map(key => {
-      const days = scheduleByHour[key].map(dayObj => dayObj.day).join("/");
+      const days = itemScheduleByHour[key].map(dayObj => dayObj.day).join("/");
       const hour = key;
 
       return `${days} (${hour})`;
     })
     .join(" ");
+};
+
+const DataView = ({ data, query }) => {
+  const searchedSubjects = data.filter(subject =>
+    query.subjects.includes(subject.code)
+  );
+  const showSubjects = searchedSubjects.length > 0;
+
+  // @todo: Improve empty subjects list message
+  return (
+    <div className="data-section">
+      {showSubjects
+        ? searchedSubjects.map(subject => (
+            <Subject key={subject.name} subject={subject} query={query} />
+          ))
+        : "No hay materias seleccionadas"}
+    </div>
+  );
+};
+
+const Subject = ({ subject, query }) => {
+  // Get filtered list of items
+  // @todo: Refactor filtering code using ramda
+  const allItems = subject.chairs
+    .map(chair =>
+      chair.places
+        .filter(place => query.places.includes(place.name))
+        .map(place => ({ ...place, chair: chair.name }))
+    )
+    .reduce((acc, current) => acc.concat(current), [])
+    .map(place =>
+      place.items
+        .filter(
+          item =>
+            item.mode === "V" ||
+            getItemScheduleList(item).every(i => query.schedule.includes(i))
+        )
+        .map(item => ({
+          ...item,
+          chair: getChairPersonName(place.chair),
+          place: place.name
+        }))
+    )
+    .reduce((acc, current) => acc.concat(current), [])
+    .map(item => {
+      return {
+        ...item,
+        key: item.code,
+        schedule: getItemScheduleText(item)
+      };
+    });
 
   return (
-    <div className="item">
-      <span className="item__code">{item.code}</span>
-      <span className="item__place">{item.place}</span>
-      <span className="item__schedule">{scheduleText}</span>
-      <span className="item__professor">{item.professor}</span>
-      <span className={`item__mode ${getClassFromMode(item.mode)}`}>{item.mode}</span>
+    <div className="subject">
+      <h1 className="subject__title">
+        <span className="subject__title__code">{subject.code}</span>
+        <span className="subject__title__text">{subject.name}</span>
+      </h1>
+      <Table
+        size="middle"
+        columns={tableColumns}
+        dataSource={allItems}
+        pagination={false}
+        locale={{
+          emptyText:
+            "No hay oferta para esta materia aplicando los filtros seleccionados"
+        }}
+      />
     </div>
   );
 };
