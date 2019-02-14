@@ -61,12 +61,6 @@
   },
   {
     "type": "subject",
-    "code": 656,
-    "name": "ORGANIZACION",
-    "note": "Los alumnos podran previamente a la inscripcion realizar consultas con los profesores. Consultar www.direcciongeneral.org.ar/organizacion/index.html"
-  },
-  {
-    "type": "subject",
     "code": 710,
     "name": "DINAMICA ESTRATEGICA-OPERACIONAL",
     "note": ""
@@ -181,6 +175,12 @@
   },
   {
     "type": "subject",
+    "code": 1656,
+    "name": "ORGANIZACION",
+    "note": "Los alumnos podran previamente a la inscripcion realizar consultas con los profesores. Consultar www.direcciongeneral.org.ar/organizacion/index.html"
+  },
+  {
+    "type": "subject",
     "code": 247,
     "name": "TEORIA CONTABLE",
     "note": ""
@@ -199,12 +199,6 @@
   },
   {
     "type": "subject",
-    "code": 352,
-    "name": "CONTABILIDAD PATRIMONIAL",
-    "note": ""
-  },
-  {
-    "type": "subject",
     "code": 353,
     "name": "SISTEMAS DE COSTOS",
     "note": ""
@@ -217,27 +211,9 @@
   },
   {
     "type": "subject",
-    "code": 358,
-    "name": "ACTUAC.PROF.JUDICIAL",
-    "note": ""
-  },
-  {
-    "type": "subject",
-    "code": 361,
-    "name": "SEM.DE INTEGRACION Y APLICACION",
-    "note": "En los cursos del 3 al 50, se realizarán reuniones semanales que estarán a cargo de Profesores Titulares y Asociados que se desempeñarán como Tutores"
-  },
-  {
-    "type": "subject",
     "code": null,
     "name": "GESTION Y COSTOS",
     "note": "(362)"
-  },
-  {
-    "type": "subject",
-    "code": 730,
-    "name": "CONTABILIDAD SOCIAL Y AMBIENTAL",
-    "note": ""
   },
   {
     "type": "subject",
@@ -247,21 +223,9 @@
   },
   {
     "type": "subject",
-    "code": 766,
-    "name": "ACTUAC.PROF.DEL CONTADOR EN SOC.",
-    "note": ""
-  },
-  {
-    "type": "subject",
     "code": 770,
     "name": "SEM.COSTOS PARA LA TOMA DE DECISIONES",
     "note": "Seminario Avanzado de Costos"
-  },
-  {
-    "type": "subject",
-    "code": 774,
-    "name": "SIST.DE ADM.FIN.Y CTRL.DEL...",
-    "note": ""
   },
   {
     "type": "subject",
@@ -277,8 +241,44 @@
   },
   {
     "type": "subject",
-    "code": 798,
-    "name": "CONTABILIDAD SUPERIOR",
+    "code": 1330,
+    "name": "CONTABILIDAD SOCIAL Y AMBIENTAL",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1352,
+    "name": "CONTABILIDAD FINANCIERA",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1358,
+    "name": "TALLER DE ACTUACION PROFESIONAL JUDICIAL",
+    "note": "El dictado de los cursos estará a cargo de las cátedras CRISTOBAL, GACIO, GARRIDO, OREÑA y ZAGLUL"
+  },
+  {
+    "type": "subject",
+    "code": 1361,
+    "name": "TALLER DE PRACTICA PROFESIONAL EN ORG.",
+    "note": "El dictado de los cursos estará a cargo de las cátedras BURSESI, CASABE, CRISTOBAL, GARRIDO, PASQUALINO, TORRANO y ZAGLUL.              Se recomienda tener aprobada 355, 356 y357."
+  },
+  {
+    "type": "subject",
+    "code": 1374,
+    "name": "CONTAB. GUBERNAMENTAL Y CONTROL GEST.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1707,
+    "name": "NEGOCIACION Y ORATORIA EN LAS ORGANIZAC.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1798,
+    "name": "CONTABILIDAD FINANCIERA SUPERIOR",
     "note": ""
   },
   {
@@ -301,32 +301,44 @@
   },
   {
     "type": "subject",
-    "code": 359,
-    "name": "DERECHO ECONOMICO I",
-    "note": ""
-  },
-  {
-    "type": "subject",
-    "code": 360,
-    "name": "DERECHO ECONOMICO II",
-    "note": ""
-  },
-  {
-    "type": "subject",
     "code": 709,
     "name": "DERECHO PROCESAL RECURSOS",
     "note": ""
   },
   {
     "type": "subject",
-    "code": 777,
-    "name": "DERECHO INFORMATICO",
+    "code": 786,
+    "name": "DERECHO DE SEGUROS",
     "note": ""
   },
   {
     "type": "subject",
-    "code": 786,
-    "name": "DERECHO DE SEGUROS",
+    "code": 1359,
+    "name": "DERECHO ECONOMICO",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1360,
+    "name": "DERECHO CREDITICIO,BURSATIL E INSOLV.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1603,
+    "name": "DERECHO INFORMATICO I",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1604,
+    "name": "DERECHO INFORMATICO II",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1708,
+    "name": "ECONOMIA Y DELITO",
     "note": ""
   },
   {
@@ -475,12 +487,6 @@
   },
   {
     "type": "subject",
-    "code": 748,
-    "name": "EVALUACION DE PROYECTOS",
-    "note": ""
-  },
-  {
-    "type": "subject",
     "code": 764,
     "name": "GESTION EN LA ECONOMIA SOCIAL",
     "note": ""
@@ -601,6 +607,12 @@
   },
   {
     "type": "subject",
+    "code": 720,
+    "name": "DEMOGRAFIA Y SEGURIDAD SOCIAL",
+    "note": "Se recomienda tener aprobada 754"
+  },
+  {
+    "type": "subject",
     "code": 722,
     "name": "APRENDIZAJE ESTRUCTURADO: METODO DE CONC",
     "note": ""
@@ -615,6 +627,12 @@
     "type": "subject",
     "code": 741,
     "name": "ELEM. DE TOPOLOGIA PARA ECON. Y GESTION",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 746,
+    "name": "COMPUTACION CIENTIFICA -ACTUAR.-",
     "note": ""
   },
   {
@@ -697,24 +715,6 @@
   },
   {
     "type": "subject",
-    "code": 652,
-    "name": "TEOR.DE L/LENG.Y SIST.OPERATIVOS",
-    "note": ""
-  },
-  {
-    "type": "subject",
-    "code": 653,
-    "name": "TECNOLOGIA DE LOS COMPUTADORES",
-    "note": ""
-  },
-  {
-    "type": "subject",
-    "code": 654,
-    "name": "CONSTRUCC. DE APLIC.INFORMATICAS",
-    "note": ""
-  },
-  {
-    "type": "subject",
     "code": 655,
     "name": "TECNOLOGIA DE COMUNICACIONES",
     "note": ""
@@ -733,21 +733,9 @@
   },
   {
     "type": "subject",
-    "code": 659,
-    "name": "AUDITOR.Y CONTR.D/SIST.D/INFOR.",
-    "note": ""
-  },
-  {
-    "type": "subject",
-    "code": 660,
-    "name": "SEMINARIO DE INTEGRACION Y APLICACI",
-    "note": ""
-  },
-  {
-    "type": "subject",
-    "code": 716,
-    "name": "GESTION DE LA INNOVACION Y TECNOL. INF.",
-    "note": ""
+    "code": 715,
+    "name": "INTELIGENCIA DE NEGOCIOS",
+    "note": "Se sugiere tener aprobada 657"
   },
   {
     "type": "subject",
@@ -757,8 +745,50 @@
   },
   {
     "type": "subject",
-    "code": 799,
-    "name": "ADMIN. DE RECURSOS INFORMATICOS",
+    "code": 1275,
+    "name": "INTR. A LA TECNOL. DE LA INF. Y COMUNIC.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1601,
+    "name": "INGENIERIA DE SOFTWARE",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1652,
+    "name": "TEORIA DE LOS LENGUAJES Y ALGORITMOS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1653,
+    "name": "TECNOL. DE LOS COMPUTAD. Y SIST. OPER.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1654,
+    "name": "CONSTRUCC. DE APLIC.INFORMATICAS",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1659,
+    "name": "AUDIT. Y SEG. DE LOS SIST. DE INFORMAC.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1660,
+    "name": "ACT. PROF. DEL LIC. EN SIST. DE INF.",
+    "note": ""
+  },
+  {
+    "type": "subject",
+    "code": 1799,
+    "name": "GESTION DE RECURSOS INFORMATICOS",
     "note": ""
   },
   {

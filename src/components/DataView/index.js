@@ -7,7 +7,11 @@ import "./index.css";
 // Get display name for chair
 const getChairPersonName = name => {
   const uppercaseWordsRegex = /\b[A-Z]{2,}\b/g;
-  return _.startCase(_.toLower(name.match(uppercaseWordsRegex).join(" ")));
+  const uppercaseName = name.match(uppercaseWordsRegex);
+  if (!uppercaseName) {
+    return "-";
+  }
+  return _.startCase(_.toLower(uppercaseName.join(" ")));
 };
 
 const getItemScheduleList = item =>
